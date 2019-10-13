@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    // background: linear-gradient(#19191a, #363635);
+    background: linear-gradient(#19191a, rgb(53, 74, 82));
+    font-family: 'Titillium Web', sans-serif;
+    min-height: 100vh;
+    // background: #19191a;
+}
+
+.header{
+    color: white;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    margin: auto;
+    h1{
+        padding-bottom: 20px;
+        font-size: 54px;
+    }
+    .btn-add, .btn-remove, .btn-clear{
+        height: 50px;
+        width: 120px;
+        border: none;
+        font-size: 16px;
+        margin: 20px;
+        // border-radius: 50px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn-add{
+        background: none;
+        border: 2px solid lightblue;
+        color: lightblue;
+        &:hover{
+            background: lightblue;
+            color: white;
+        }
+    }
+    .btn-remove{
+        background: none;
+        border: 2px solid rgb(247, 76, 76);
+        color: rgb(247, 76, 76);
+        &:hover{
+            background: rgb(247, 76, 76);
+            color: white;
+        }
+    }
+    .btn-clear{
+        background: none;
+        background: none;
+        border: 2px solid rgb(12, 207, 12);
+        color: rgb(12, 207, 12);
+        &:hover{
+            background: rgb(12, 207, 12);
+            color: white;
+        }
+    }
+}
+.section{
+    display: flex;
+    justify-content: center;
+    ul{
+        list-style: none;
+        padding: 10px;
+        width: 50%;       
+        li{
+            background: white;
+            padding: 12px;
+            &:nth-child(even){
+                // background: rgb(245, 217, 253);
+                background: #19191a;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .header{
+        padding: 60px 0 60px 0;
+        .btn-add, .btn-remove, .btn-clear{
+            margin: 2px;
+            width: 100px;
+        }
+    }
+    .section{
+        ul{
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
